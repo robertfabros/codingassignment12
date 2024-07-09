@@ -31,9 +31,4 @@ export default {
 
 Instructions:
 
-1. docker build -t fabros_robert_coding_assignment12:latest .
-
-2. docker run -dp 8083:6006 --name fabros_robert_coding_assignment12 fabros_robert_coding_assignment12:latest
-
-3. Pushed the App package to github.
-   https://github.com/robertfabros/codingassignment12.git
+1. docker build -t lecture:ci -f Dockerfile.ci .
