@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:21-bullseye
+FROM node:lts-iron
 
 # Set the working directory inside the container
 WORKDIR /Fabros_Robert_ui_garden
