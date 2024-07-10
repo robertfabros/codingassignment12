@@ -9,6 +9,6 @@ describe('MyButton Component', () => {
     const buttonElement = screen.getByText(/Primary Button/i);
     expect(buttonElement).toBeInTheDocument();
     expect(buttonElement).toHaveStyle({ backgroundColor: '#1e90ff' });
-    expect(buttonElement).toHaveTextContent('Primary Button');
+    expect(buttonElement).toHaveTextContent('Third');
   });
 });
