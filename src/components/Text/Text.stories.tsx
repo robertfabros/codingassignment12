@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { within, userEvent } from '@storybook/testing-library';
 import Text from './Text';
 import { TextProps } from './Text.types';
 
@@ -49,9 +49,23 @@ DefaultText.args = {
   backgroundColor: '#ccc',
 };
 
+DefaultText.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const text = await canvas.getByText('This is a text component');
+  await userEvent.hover(text); // Simulate hover interaction
+  // Add more interactions if needed
+};
+
 export const DisabledText = Template.bind({});
 DisabledText.args = {
   ...DefaultText.args,
   disabled: true,
   backgroundColor: '#ccc',
+};
+
+DisabledText.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const text = await canvas.getByText('This is a text component');
+  await userEvent.hover(text); // Simulate hover interaction
+  // Check for disabled styles if needed
 };

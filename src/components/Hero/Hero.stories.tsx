@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { within, userEvent } from '@storybook/testing-library';
 import Hero from './Hero';
 import { HeroProps } from './Hero.types';
 
@@ -53,9 +53,29 @@ DefaultHero.args = {
   backgroundColor: '#ccc',
 };
 
+DefaultHero.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  // Simulate interactions here if needed
+  // Example: Check if title and subtitle are rendered correctly
+  const title = await canvas.getByText('Hero Title');
+  const subtitle = await canvas.getByText('This is a subtitle');
+  await userEvent.hover(title); // Simulate hover or any other interaction
+  await userEvent.hover(subtitle); // Simulate hover or any other interaction
+};
+
 export const DisabledHero = Template.bind({});
 DisabledHero.args = {
   ...DefaultHero.args,
   disabled: true,
   backgroundColor: '#ccc',
+};
+
+DisabledHero.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  // Simulate interactions here if needed
+  // Example: Check if title and subtitle are rendered correctly and element has disabled styles
+  const title = await canvas.getByText('Hero Title');
+  const subtitle = await canvas.getByText('This is a subtitle');
+  await userEvent.hover(title); // Simulate hover or any other interaction
+  await userEvent.hover(subtitle); // Simulate hover or any other interaction
 };

@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { within, userEvent } from '@storybook/testing-library';
 import Label from './Label';
 import { LabelProps } from './Label.types';
 
@@ -48,9 +48,23 @@ DefaultLabel.args = {
   backgroundColor: '#ccc',
 };
 
+DefaultLabel.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const label = await canvas.getByText('Label Text');
+  await userEvent.hover(label); // Simulate hover interaction
+  // Add more interactions if needed
+};
+
 export const DisabledLabel = Template.bind({});
 DisabledLabel.args = {
   ...DefaultLabel.args,
   disabled: true,
   backgroundColor: '#ccc',
+};
+
+DisabledLabel.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const label = await canvas.getByText('Label Text');
+  await userEvent.hover(label); // Simulate hover interaction
+  // Check for disabled styles if needed
 };

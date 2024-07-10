@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { within, userEvent } from '@storybook/testing-library';
 import Image from './Image';
 import { ImageProps } from './Image.types';
 
@@ -51,9 +51,23 @@ DefaultImage.args = {
   backgroundColor: '#ccc',
 };
 
+DefaultImage.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const image = await canvas.getByAltText('Placeholder Image');
+  await userEvent.hover(image); // Simulate hover interaction
+  // Add more interactions if needed
+};
+
 export const DisabledImage = Template.bind({});
 DisabledImage.args = {
   ...DefaultImage.args,
   disabled: true,
   backgroundColor: '#ccc',
+};
+
+DisabledImage.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const image = await canvas.getByAltText('Placeholder Image');
+  await userEvent.hover(image); // Simulate hover interaction
+  // Check for disabled styles if needed
 };
