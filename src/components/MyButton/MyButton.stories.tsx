@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { userEvent, within } from '@storybook/testing-library';
 import MyButton from './MyButton';
 import { MyButtonProps } from './MyButton.types';
 
@@ -13,6 +13,10 @@ export default {
     disabled: { control: 'boolean' },
     isVisible: { control: 'boolean' },
     backgroundColor: { control: 'color' }, // Ensure background color control is available
+  },
+  parameters: {
+    actions: { argTypesRegex: '^on.*' },
+    controls: { expanded: true },
   },
 } as Meta;
 
@@ -51,6 +55,12 @@ Primary.args = {
   backgroundColor: '#ccc', // Default background color for Storybook control
 };
 
+Primary.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const button = await canvas.getByText('Primary Button');
+  await userEvent.click(button);
+};
+
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Secondary Button',
@@ -58,6 +68,12 @@ Secondary.args = {
   disabled: false,
   isVisible: true,
   backgroundColor: '#ccc', // Default background color for Storybook control
+};
+
+Secondary.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const button = await canvas.getByText('Secondary Button');
+  await userEvent.click(button);
 };
 
 export const DisabledPrimary = Template.bind({});
@@ -69,6 +85,12 @@ DisabledPrimary.args = {
   backgroundColor: '#aaa', // Background color when disabled
 };
 
+DisabledPrimary.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const button = await canvas.getByText('Disabled Primary Button');
+  await userEvent.click(button);
+};
+
 export const DisabledSecondary = Template.bind({});
 DisabledSecondary.args = {
   label: 'Disabled Secondary Button',
@@ -76,4 +98,10 @@ DisabledSecondary.args = {
   disabled: true,
   isVisible: true,
   backgroundColor: '#aaa', // Background color when disabled
+};
+
+DisabledSecondary.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const button = await canvas.getByText('Disabled Secondary Button');
+  await userEvent.click(button);
 };

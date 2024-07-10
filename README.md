@@ -31,4 +31,7 @@ export default {
 
 Instructions:
 
-1. docker build -t lecture:ci -f Dockerfile.ci .
+1. npm run test
+
+2. docker build -t lecture:ci -f Dockerfile.ci .
+3. docker run --rm lecture:ci
