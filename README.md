@@ -35,3 +35,6 @@ Instructions:
 
 2. docker build -t lecture:ci -f Dockerfile.ci .
 3. docker run --rm lecture:ci
+
+npm run build:main
+npx serve storybook-static
