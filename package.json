@@ -32,13 +32,13 @@
     "testEnvironment": "jsdom"
   },
   "dependencies": {
-    "@storybook/testing-library": "^0.2.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^6.1.11"
+    "@storybook/testing-library": "0.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "6.1.11"
   },
   "devDependencies": {
-    "-": "^0.0.1",
+    "-": "0.0.1",
     "@babel/core": "7.24.7",
     "@babel/preset-env": "7.24.7",
     "@babel/preset-react": "7.24.7",
