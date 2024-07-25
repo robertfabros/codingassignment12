@@ -9,7 +9,7 @@ const Header: React.FC = () => (
     </div>
     <nav id="top_nav">
       <ul>
-        <li><a href="https://robertfabros.com">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/front-end-dev">Front-End Development</a></li>
         <li><a href="/graphic-design">Graphic Design</a></li>
         <li><a href="/contact-me">Contact Me</a></li>
