@@ -15,6 +15,7 @@ const App: React.FC = () => {
       <Hero />
       <Boxes />
       <Footer />
+      Just for testing
     </div>
   );
 }
