@@ -1,21 +1,20 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer';
 import Boxes from './components/Boxes';
 import './App.css';
-import styled from 'styled-components';
+import './App.js'
+import Navmobile from './components/Navmobile';
 
 const App: React.FC = () => {
   return (
     <div className="App">
+      <Navmobile />
       <Header />
       <Hero />
       <Boxes />
       <Footer />
-      Just for testing
     </div>
   );
 }

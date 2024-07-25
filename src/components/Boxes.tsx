@@ -38,8 +38,7 @@ const Boxes: React.FC = () => (
         </div>
         <h3>Book an appointment</h3>
         <p>
-          To learn more about my services, please contact me via the Contact Me page or email me at
-          <strong><a href="mailto:robert@robertfabros.com">robert@robertfabros.com</a></strong>.
+          To learn more about my services, please contact me via the Contact Me page or email me at <strong><a href="mailto:robert@robertfabros.com">robert@robertfabros.com</a></strong>.
         </p>
         <p className="contact_box"><a href="contact-me.html">Contact Me</a></p>
       </div>
