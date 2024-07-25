@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer';
+import Boxes from './components/Boxes';
 import './App.css';
 import styled from 'styled-components';
 
@@ -12,7 +13,7 @@ const App: React.FC = () => {
     <div className="App">
       <Header />
       <Hero />
-      {/* Other components or sections can go here */}
+      <Boxes />
       <Footer />
     </div>
   );
