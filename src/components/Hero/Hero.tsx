@@ -1,25 +1,21 @@
-// src/components/Hero/Hero.tsx
-
 import React from 'react';
-import { HeroProps } from './Hero.types';
+import Text from '../Text/Text';
+import MyButton from '../MyButton/MyButton';
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage, className, backgroundColor, children }) => {
-  const combinedStyle = {
-    backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundColor: backgroundColor, // Directly apply backgroundColor here
-    padding: '20px',
-    textAlign: 'center',
-  };
-
-  return (
-    <div className={className} style={combinedStyle}>
-      <h1>{title}</h1>
-      {subtitle && <h2>{subtitle}</h2>}
-      {children}
+const Hero: React.FC = () => (
+  <section id="hero">
+    <div className="frame_1">
+    <Text className="text-wrapper" content="Hello. My name is Robert and I am a" tag="h1" />
+      <Text className="front-end-dev" content="Front-End Dev & Graphic Designer" tag="h2" />
+      <div className="buttons_main">
+        <MyButton label="SERVICES" className="myServices" style={{ cursor: 'pointer' }} />
+        <MyButton label="CONTACT ME" className="contact_me" style={{ cursor: 'pointer' }} />
+      </div>
     </div>
-  );
-};
+    <div className="frame_2">
+      <img src="img/hero-profile.png" alt="Robert Fabros" />
+    </div>
+  </section>
+);
 
 export default Hero;
