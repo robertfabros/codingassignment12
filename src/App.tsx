@@ -8,6 +8,7 @@ import './App.css';
 import './App.js'
 import FrontEndDev from './components/FrontEndDev';
 import Navmobile from './components/Navmobile';
+import ContactMe from './components/ContactMe';
 
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<><Hero /><Boxes /></>} />
           <Route path="/front-end-dev" element={<FrontEndDev />} />
+          <Route path="/contact-me" element={<ContactMe />} />
         </Routes>
         <Footer />
       </div>

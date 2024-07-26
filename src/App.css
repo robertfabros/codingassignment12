@@ -1113,7 +1113,10 @@ button#clear {
   .social .twitter-icon:hover {
     mix-blend-mode: unset;
   }
-
+  .alignCenter {
+    text-align: center;
+    font-size: 50px;
+  }
   section#innerp {
       width: 90%;
       padding: 0px 15px;
@@ -1141,7 +1144,7 @@ button#clear {
   .page_title2 {
       display: flex;
       flex-direction: column;
-      width: 40%;
+      width: 100%;
       margin: auto;
       margin-top: 60px;
   }
@@ -1150,7 +1153,7 @@ button#clear {
       font-family: "SF Pro Display-Bold", Helvetica;
       font-weight: 700;
       color: #ffffff;
-      font-size: 72px;
+      font-size: 28px;
       letter-spacing: 0;
       line-height: 90px;
       text-align: center;
@@ -1243,8 +1246,8 @@ button#clear {
   }
 
   .form {
-      width: 80%;
-      margin: 45px auto 45px auto;
+      width: 100%;
+      margin: 25px auto 25px auto;
   }
 
   fieldset {
@@ -1268,21 +1271,21 @@ button#clear {
       font-family: "SF Pro Display-Regular", Helvetica;
       font-weight: 400;
       color: #ffffff;
-      font-size: 46px;
+      font-size: 20px;
       letter-spacing: 0;
-      line-height: 62px;
+      line-height: 20px;
       display: block;
   }
 
   #contact_form input,
   #contact_form textarea {
-      width: 90%;
-      margin-bottom: 26px;
-      padding: 26px 26px;
+      width: 80%;
+      margin-bottom: 16px;
+      padding: 12px 12px;
       border-radius: 8px;
       font-family: "SF Pro Display-Regular", Helvetica;
       font-weight: 400;
-      font-size: 28px;
+      font-size: 18px;
       color: #4a4a4a;
   }
 
@@ -1295,13 +1298,13 @@ button#clear {
 
   #contact_form button {
       background-color: #423594;
-      border-radius: 60px;
+      border-radius: 10%;
       cursor: pointer;
       color: #ffffff;
       font-family: "SF Pro Display-Bold", Helvetica;
       font-weight: 600;
-      font-size: 50px;
-      padding: 37px 62px;
+      font-size: 20px;
+      padding: 20px 30px;
       text-decoration: none;
       border: none;
   }
@@ -1326,9 +1329,9 @@ button#clear {
       font-family: "SF Pro Display-Regular", Helvetica;
       font-weight: 400;
       color: #aa021e;
-      font-size: 26px;
+      font-size: 16px;
       letter-spacing: 0;
-      line-height: 32px;
+      line-height: 22px;
       margin: 0px;
       margin-bottom: 30px;
   }
