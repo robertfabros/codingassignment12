@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => (
   <footer>
     <nav id="footernav">
       <ul>
-        <li><a href="https://robertfabros.com">Home</a></li>
-        <li><a href="/front-end-dev">Front-End Development</a></li>
-        <li><a href="/graphic-design">Graphic Design</a></li>
-        <li><a href="/contact-me">Contact Me</a></li>
+      <li><Link to="/" className="nav-link">Home</Link></li>
+      <li><Link to="/front-end-dev" className="nav-link">Front-End Development</Link></li>
+      <li><Link to="/graphic-design" className="nav-link">Graphic Design</Link></li>
+      <li><Link to="/contact-me" className="nav-link">Contact Me</Link></li>
       </ul>
       <p>&copy; Copyright 2024 <a href="https://robertfabros.com">RobertFabros.com</a>. All Rights Reserved.</p>
     </nav>

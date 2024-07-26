@@ -1,9 +1,10 @@
 import React from 'react';
 import '../App.css'; // Use the main App.css for styles
+import { Link } from 'react-router-dom';
 
 const Boxes: React.FC = () => (
   <section id="boxes">
-    <a href="front-end-dev.html">
+     <Link to="/front-end-dev">
       <div className="box1">
         <div className="polybox1">
           <div className="polygon1">
@@ -16,8 +17,8 @@ const Boxes: React.FC = () => (
           </p>
         </div>
       </div>
-    </a>
-    <a href="front-end-dev.html">
+    </Link>
+    <Link to="/contact-me">
       <div className="box2">
         <div className="polybox1">
           <div className="polygon2">
@@ -30,7 +31,7 @@ const Boxes: React.FC = () => (
           </p>
         </div>
       </div>
-    </a>
+    </Link>
     <div className="box3">
       <div className="polybox1">
         <div className="polygon3">
