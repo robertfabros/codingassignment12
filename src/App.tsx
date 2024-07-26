@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TopNav from './components/TopNav/TopNav';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer';
@@ -7,7 +8,6 @@ import Boxes from './components/Boxes';
 import './App.css';
 import './App.js'
 import FrontEndDev from './components/FrontEndDev';
-import Navmobile from './components/Navmobile';
 import ContactMe from './components/ContactMe';
 import Section from './components/Section/Section';
 
@@ -16,7 +16,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Section className="main-section">
-        <Navmobile />
+        <TopNav />
         <Header />
         <Routes>
           <Route path="/" element={<><Hero /><Boxes /></>} />

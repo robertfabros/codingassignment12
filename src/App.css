@@ -1422,4 +1422,23 @@ button#clear {
     background-color: #26929d;
     color: white;
   }
+
+  .topnav .icon:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #myLinks {
+    display: none;
+  }
+  
+  #myLinks.show {
+    display: block;
+  }
+
+  .topnav:hover {
+    background-color: #e0e0e0; /* Example hover effect */
+  }
+  
+  
 }
