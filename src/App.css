@@ -739,6 +739,12 @@ button#clear {
   color: #5e749e;
 }
 
+.main-section:hover {
+  transition: background-color 0.3s ease-in-out;
+  mix-blend-mode: luminosity;
+}
+
+
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   body {

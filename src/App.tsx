@@ -9,12 +9,13 @@ import './App.js'
 import FrontEndDev from './components/FrontEndDev';
 import Navmobile from './components/Navmobile';
 import ContactMe from './components/ContactMe';
+import Section from './components/Section/Section';
 
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="App">
+      <Section className="main-section">
         <Navmobile />
         <Header />
         <Routes>
@@ -23,7 +24,7 @@ const App: React.FC = () => {
           <Route path="/contact-me" element={<ContactMe />} />
         </Routes>
         <Footer />
-      </div>
+      </Section>
     </Router>
   );
 }
