@@ -1,13 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer';
 import Boxes from './components/Boxes';
 import './App.css';
 import './App.js'
-import Navmobile from './components/Navmobile';
 import FrontEndDev from './components/FrontEndDev';
+import Navmobile from './components/Navmobile';
+
 
 const App: React.FC = () => {
   return (
