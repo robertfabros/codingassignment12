@@ -1,6 +1,7 @@
 import React from 'react';
 import Text from '../Text/Text';
 import MyButton from '../MyButton/MyButton';
+import Image from '../Image/Image';
 
 const Hero: React.FC = ({ children }) => (
   <section id="hero">
@@ -13,7 +14,7 @@ const Hero: React.FC = ({ children }) => (
       </div>
     </div>
     <div className="frame_2">
-      <img src="img/hero-profile.png" alt="Robert Fabros" />
+      <Image src="img/hero-profile.png" alt="Robert Fabros" className="hero-image" />
     </div>
     {children}
   </section>

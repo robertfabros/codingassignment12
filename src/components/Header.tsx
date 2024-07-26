@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => (
   <header id="head">
     <div className="logo">
-      <a href="https://robertfabros.com">
+      <a href="/">
         <img className="robertfabros-logo" src="img/robertfabros-logo1.png" alt="logo" />
       </a>
     </div>

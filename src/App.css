@@ -688,6 +688,31 @@ button#clear {
   margin-left: 20px;
 }
 
+.programming-languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 50px auto;
+  border: solid 1px #fff;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.programming-languages li {
+  font-family: "SF Pro Display-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.listInner {
+  text-align: center;
+  color: #fff;
+}
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
@@ -1090,7 +1115,9 @@ button#clear {
   }
 
   section#innerp {
-      width: 100%;
+      width: 90%;
+      padding: 0px 15px;
+      margin: auto;
   }
 
   .page_title {
@@ -1105,7 +1132,7 @@ button#clear {
       font-family: "SF Pro Display-Bold", Helvetica;
       font-weight: 700;
       color: #ffffff;
-      font-size: 72px;
+      font-size: 28px;
       letter-spacing: 0;
       line-height: 90px;
       text-align: center;
@@ -1133,7 +1160,7 @@ button#clear {
       font-family: "SF Pro Display-Regular", Helvetica;
       font-weight: 300;
       color: #ffffff;
-      font-size: 52px;
+      font-size: 22px;
       letter-spacing: 0;
       line-height: normal;
       margin: 0px auto 0px auto;
@@ -1167,7 +1194,7 @@ button#clear {
 
   .innerbox .innergroup {
       width: 80%;
-      padding: 60px 34px 60px 34px;
+      padding: 30px 14px 30px 14px;
       background-color: #1e293b;
       border-radius: 11px;
       border: 1px solid;
@@ -1185,7 +1212,7 @@ button#clear {
       font-family: "SF Pro Display-Regular", Helvetica;
       font-weight: 300;
       color: #ffffff;
-      font-size: 40px;
+      font-size: 20px;
       letter-spacing: 0;
       line-height: normal;
       margin: 0px;
@@ -1195,7 +1222,7 @@ button#clear {
       font-family: "SF Pro Display-Medium", Helvetica;
       font-weight: 500;
       color: #ffffff;
-      font-size: 58px;
+      font-size: 38px;
       text-align: center;
       letter-spacing: 0;
       line-height: normal;
