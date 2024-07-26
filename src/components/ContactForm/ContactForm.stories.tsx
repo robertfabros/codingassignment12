@@ -1,5 +1,4 @@
 // src/components/ContactForm/ContactForm.stories.tsx
-
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
@@ -22,6 +21,9 @@ Default.play = async ({ canvasElement }) => {
   const phoneInput = canvas.getByLabelText(/Phone Number/i);
   const messageInput = canvas.getByLabelText(/Message/i);
   const submitButton = canvas.getByText(/Submit/i);
+
+  // Prevent the form from submitting
+  submitButton.closest('form').addEventListener('submit', (e) => e.preventDefault());
 
   await userEvent.type(nameInput, 'John Doe');
   await userEvent.type(emailInput, 'john.doe@example.com');
