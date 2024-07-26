@@ -15,9 +15,9 @@ const Navmobile: React.FC = () => {
       <div className="topnav">
         <div id="myLinks">
           <a href="/">Home</a>
-          <a href="front-end-dev.html">Front-End Development</a>
-          <a href="front-end-dev.html">Graphic Design</a>
-          <a href="contact-me.html">Contact Me</a>
+          <a href="/front-end-dev">Front-End Development</a>
+          <a href="/front-end-dev">Graphic Design</a>
+          <a href="/contact-me">Contact Me</a>
         </div>
         <button className="icon" onClick={myFunction}>
           <i className="fa fa-bars"></i>

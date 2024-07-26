@@ -7,7 +7,7 @@ import Boxes from './components/Boxes';
 import './App.css';
 import './App.js'
 import Navmobile from './components/Navmobile';
-import FrontEndDev from './components/FrontEndDev'; // Import your component
+import FrontEndDev from './components/FrontEndDev';
 
 const App: React.FC = () => {
   return (

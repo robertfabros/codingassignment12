@@ -12,7 +12,7 @@ const Header: React.FC = () => (
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/front-end-dev">Front-End Development</a></li>
-        <li><a href="/graphic-design">Graphic Design</a></li>
+        <li><a href="/front-end-dev">Graphic Design</a></li>
         <li><a href="/contact-me">Contact Me</a></li>
       </ul>
     </nav>
