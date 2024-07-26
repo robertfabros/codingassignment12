@@ -10,8 +10,3 @@ const List: React.FC<ListProps> = ({ items, className }) => (
 );
 
 export default List;
-
-export interface ListProps {
-  items: string[];
-  className?: string;
-}

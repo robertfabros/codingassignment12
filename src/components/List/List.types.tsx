@@ -1,5 +1,4 @@
 export interface ListProps {
-    items: string[];
-    className?: string;
-  }
-  
+  items: string[];
+  className?: string;
+}
